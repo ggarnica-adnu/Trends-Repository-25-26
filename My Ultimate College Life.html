@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Ultimate College Life Web Page</title>
+  <style>
+    /* Asked For Help for styling (Chatgpt)*/
+    body {
+      background: radial-gradient(circle at top, #1b2735 0%, #090a0f 100%);
+      color: #eaeaea;
+      text-align: center;
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 10px;
+      letter-spacing: 1px;
+    }
+
+    .header-img {
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      margin-bottom: 15px;
+    }
+
+    /* Navigation */
+    .nav {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 30px;
+    }
+
+    .nav li {
+      display: inline;
+      padding: 0 15px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #7dd3fc;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 10px #38bdf8;
+    }
+
+    /* Cards */
+    .card {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 25px;
+      margin: 30px auto;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 0 20px rgba(0, 183, 255, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 183, 255, 0.3);
+    }
+
+    .card ul,
+    .card ol {
+      list-style-position: inside;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    .card li {
+      display: block;
+      padding: 6px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .header-img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img 
+    src="https://www.adnu.edu.ph/wp-content/uploads/2023/01/20220604_093908-1024x423.jpg" 
+    alt="Campus" 
+    class="header-img"
+  />
+
+  <h1>My Ultimate College Life Web Page</h1>
+  <p>James Ryan C. Garnica</p>
+
+  <ul class="nav">
+    <li><a href="#about">About Me</a></li>
+  </ul>
+
+  <div class="card" id="about">
+    <h2>Introduction</h2>
+    <p>
+      I’m a Information Systems student balancing classes, weirdness, and the daily quest for motivation. 
+      On good days, I’m productive and finish tasks early; on bad days, I still show up—and that counts. 
+      I enjoy learning tech stuff, vibing with music while working, and finding small wins in everyday routines. 
+      College life can be chaotic, but I’m here for the growth, the glow-up, and the random moments that turn into core memories.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>College Must-Haves</h3>
+    <ul>
+      <li>💻 Laptop</li>
+      <li>🎧 Headphones & Earbuds</li>
+      <li>🥤 Water Bottle</li>
+      <li>☔ Umbrella</li>
+      <li>🫂 Good Friends</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Daily Routine</h3>
+    <ol>
+      <li>Morning: Gym</li>
+      <li>Late Morning: Shower/meal</li>
+      <li>Afternoon: Attend Classes</li>
+      <li>Evening: Games, Shows, or Study</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3>Hobbies / Interests</h3>
+    <ul>
+      <li>🎮 Games</li>
+      <li>📖 Reading</li>
+      <li>♟️ Chess</li>
+      <li>📺 Series</li>
+      <li>🍿 Anime</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Additional Information</h3>
+    <i>Seminars Attended</i>
+    <p>
+      I have attended a few school seminars about technology, career guidance, and personal development. 
+      These seminars helped me understand what skills I should improve for my future career.
+    </p>
+    <h4> Certificates </h4>
+    <ul>
+      <li> C++ Programming 2023</li>
+      <li> Phython Programming 2023</li>
+      <li> Wadwhani Foundation Certificate 2025</li>
+    </ul>
+  </div>
+<button type="button">Click Me!</button>
+
+  <footer>
+    © 2026 | My Ultimate College Life Page
+  </footer>
+
+</body>
+</html>
